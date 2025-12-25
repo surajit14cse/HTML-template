@@ -1,0 +1,67 @@
+/* Responsive CSS
+--------------------------------------------------------------*/
+
+@media (max-width: 992px) {
+    .hero__content {
+        padding: 30px;
+    }
+
+    .hero__heading {
+        font-size: 2.5rem;
+    }
+
+    .hero__subheading {
+        font-size: 1.1rem;
+    }
+
+    .feature-box {
+        width: 120px;
+        padding: 20px;
+    }
+
+    .work-item {
+        margin-bottom: 30px;
+    }
+
+    .feature-item {
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero {
+        text-align: center;
+    }
+
+    .hero .row {
+        flex-direction: column-reverse;
+    }
+
+    .hero__features {
+        justify-content: center;
+    }
+
+    .about-us .row {
+        flex-direction: column-reverse;
+    }
+
+    .about-us .col-md-6 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero__features {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer .col-md-6 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,60 @@
+/* Case Studies CSS
+--------------------------------------------------------------*/
+
+.case-studies {
+    padding: 80px 0;
+}
+
+.case-study-item {
+    margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 1px solid #eee;
+}
+
+.case-study-item:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+.case-study-item h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.case-study-item p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.results {
+    margin-top: 30px;
+}
+
+.results h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.results ul {
+    list-style: none;
+    padding: 0;
+}
+
+.results ul li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.results ul li:before {
+    content: '\f00c';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: var(--primary-blue);
+}

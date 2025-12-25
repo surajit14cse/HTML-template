@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -30,7 +31,10 @@
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#services">Services</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../case-studies.html">Case Studies</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../about.html">About Us</a>
@@ -52,42 +56,76 @@
     <!-- Header End -->
 
     <main>
-        <!-- Service Details Section Start -->
-        <section class="service-details">
+        <div class="service-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>SEO Optimization</h1>
+                        <p class="lead">Unlock your website's potential with our data-driven SEO strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="service-content-area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">SEO Optimization</h1>
-                        <p class="text-center">We help you rank higher in search results and drive more traffic to your website.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="../assets/img/seo-optimization.png" alt="SEO Optimization" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Our SEO Optimization Strategy</h2>
-                        <p>Our comprehensive SEO strategy focuses on improving your website's visibility and organic traffic. Our strategy includes:</p>
-                        <ul>
-                            <li>Keyword Research and Analysis</li>
-                            <li>On-Page and Off-Page SEO</li>
-                            <li>Technical SEO Audit</li>
-                            <li>Content Marketing Integration</li>
-                            <li>Performance Monitoring and Reporting</li>
-                        </ul>
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-chart-line"></i>
+                            </div>
+                            <div class="service-card__content">
+                                <h3>Our Approach to SEO</h3>
+                                <p>We take a holistic approach to SEO, focusing on both on-page and off-page optimization to improve your website's visibility in search engine results. Our goal is to drive long-term, sustainable growth for your business.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-search-dollar"></i>
+                            </div>
+                            <div class="service-card__content">
+                                <h3>Our SEO Process</h3>
+                                <p>Our SEO process is transparent and data-driven. We start with a comprehensive audit of your website and then develop a customized strategy to help you achieve your goals. Our process includes the following steps: Audit, Strategy, Implementation, and Reporting.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-bullseye"></i>
+                            </div>
+                            <div class="service-card__content">
+                                <h3>Why Invest in SEO?</h3>
+                                <p>Investing in SEO is one of the most effective ways to grow your business online. It can help you increase traffic to your website, generate more leads, and build brand credibility. A strong SEO strategy is essential for any business that wants to succeed in the digital age.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Service Details Section End -->
     </main>
 
     <!-- Footer Start -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-bar">
-                <p><i class="fas fa-envelope"></i> info@example.com</p>
-                <p><i class="fas fa-globe"></i> www.example.com</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Corp Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+                </div>
             </div>
         </div>
     </footer>

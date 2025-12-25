@@ -114,7 +114,21 @@ h1, h2, h3, h4, h5, h6 {
 /* Styles for the main hero section of the landing page */
 .hero {
     padding: 100px 0;
-    background: linear-gradient(135deg, var(--primary-blue), var(--dark-blue));
+    background: linear-gradient(45deg, #00AEEF, #003366, #FF6B6B, #FFA500);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .hero__image img {
@@ -225,6 +239,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 15px;
 }
 
+
 /* 5. About Us Section */
 /* Styles for the About Us section */
 .about-us {
@@ -240,6 +255,135 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.8;
     margin-bottom: 2rem;
 }
+
+.about-us__list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 2rem;
+}
+
+.about-us__list li {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.about-us__list i {
+    color: var(--primary-blue);
+    margin-right: 10px;
+}
+/* Why Choose Us Section */
+.why-choose-us {
+    padding: 80px 0;
+    background: linear-gradient(45deg, #00AEEF, #003366, #FF6B6B, #FFA500);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    color: var(--white);
+}
+
+.why-choose-us .feature-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: var(--white);
+}
+
+.why-choose-us .feature-item__icon {
+    color: var(--white);
+}
+
+.why-choose-us .feature-item h3 {
+    color: var(--white);
+}
+
+.feature-item {
+    padding: 40px;
+    border-radius: 15px;
+    background-color: var(--white);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+
+.feature-item__icon {
+    font-size: 3rem;
+    color: var(--primary-blue);
+    margin-bottom: 20px;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.work-item-overlay p {
+    font-size: 1rem;
+    margin: 0;
+}
+
+/* Our Work Section */
+.our-work {
+    padding: 80px 0;
+    background-color: var(--white);
+}
+
+.work-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.work-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+
+.work-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.work-item-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 51, 102, 0.8);
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.work-item:hover .work-item-overlay {
+    opacity: 1;
+}
+
+.work-item-overlay h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.work-item-overlay p {
+    font-size: 1rem;
+    margin: 0;
+}
+
 
 /* 6. Testimonials Section */
 /* Styles for the client testimonials section */
@@ -301,6 +445,10 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 0.9rem;
     margin: 0;
     font-style: normal;
+}
+
+.bg-light {
+    background-color: var(--light-gray) !important;
 }
 
 /* 7. Contact Us Section */
@@ -403,87 +551,86 @@ h1, h2, h3, h4, h5, h6 {
 /* Styles for the pricing plans section */
 .pricing {
     padding: 80px 0;
-    background-color: #f8f9fa;
+    background-color: var(--white);
 }
 
 .pricing-box {
-    background-color: var(--white);
-    padding: 40px;
     border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
     transition: all 0.3s ease;
+    background-color: var(--white);
+    overflow: hidden;
+}
+
+.pricing-box:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-box.popular {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+.pricing-box__header {
+    padding: 30px;
+    background-color: var(--light-gray);
     text-align: center;
 }
 
-.pricing-box:hover,
-.pricing-box.popular {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
-    border: 2px solid var(--accent-orange);
+.pricing-box.popular .pricing-box__header {
+    background-color: var(--primary-blue);
+    color: var(--white);
 }
 
-.pricing-box h3 {
+.pricing-box__header h3 {
     font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 15px;
+    font-weight: 700;
+    margin-bottom: 10px;
 }
 
-.pricing-box .price {
+.pricing-box__header .price {
     font-size: 3rem;
     font-weight: 700;
-    color: var(--primary-blue);
-    margin-bottom: 20px;
 }
 
-.pricing-box .price span {
+.pricing-box__header .price span {
     font-size: 1rem;
     font-weight: 400;
     color: #999;
 }
 
-.pricing-box ul {
-    list-style: none;
-    padding: 0;
-    margin-bottom: 30px;
-}
-
-.pricing-box ul li {
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 25px; /* Space for icon */
-    text-align: left;
-}
-
-.pricing-box ul li i {
-    color: var(--primary-blue); /* Color for icons in feature list */
-    position: absolute;
-    left: 0;
-    top: 5px; /* Adjust vertical alignment */
-}
-
-/* Enhanced styling for the popular pricing box */
-.pricing-box.popular {
-    position: relative;
-    overflow: hidden;
-    transform: translateY(-15px); /* More lift */
-    border-color: var(--accent-orange);
-    box-shadow: 0 18px 36px rgba(0,0,0,0.15); /* Stronger shadow */
-}
-
-.pricing-box.popular::before {
-    content: "Popular";
-    position: absolute;
-    top: 20px;
-    right: -30px;
-    background-color: var(--accent-orange);
+.pricing-box.popular .pricing-box__header .price span {
     color: var(--white);
-    padding: 5px 30px;
-    font-size: 0.8rem;
-    font-weight: 700;
-    text-transform: uppercase;
-    transform: rotate(45deg);
-    transform-origin: 100% 0%;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.pricing-box__features {
+    padding: 30px;
+    list-style: none;
+}
+
+.pricing-box__features li {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+.pricing-box__features i {
+    margin-right: 10px;
+    color: var(--primary-blue);
+}
+
+.pricing-box__features li .fa-times {
+    color: #ccc;
+}
+
+.pricing-box__footer {
+    padding: 30px;
+    text-align: center;
+    background-color: var(--light-gray);
+}
+
+.pricing-box.popular .pricing-box__footer {
+    background-color: transparent;
 }
 
 /* 9. FAQ Section */
@@ -633,28 +780,39 @@ h1, h2, h3, h4, h5, h6 {
 
 /* 12. Footer */
 .footer {
-    background-color: var(--light-gray);
+    background-color: var(--dark-blue);
     padding: 3rem 0;
-    border-top: 1px solid #eee;
+    color: var(--white);
 }
 
-.footer-bar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
+.footer p {
+    margin: 0;
 }
 
-.footer-bar p {
+.social-icons {
+    list-style: none;
+    padding: 0;
     margin: 0;
     display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 1.1rem;
+    gap: 15px;
 }
 
-.footer-bar i {
+.social-icons li a {
+    color: var(--white);
     font-size: 1.2rem;
-    margin-right: 10px;
-    color: var(--primary-blue);
+    transition: all 0.3s ease;
+}
+
+.social-icons li a:hover {
+    color: var(--accent-orange);
+}
+
+.back-to-top {
+    color: var(--white);
+    font-size: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.back-to-top:hover {
+    color: var(--accent-orange);
 }

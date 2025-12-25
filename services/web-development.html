@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -30,7 +31,10 @@
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#services">Services</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../case-studies.html">Case Studies</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../about.html">About Us</a>
@@ -52,87 +56,76 @@
     <!-- Header End -->
 
     <main>
-        <!-- Service Details Section Start -->
-        <section class="service-details">
+        <div class="service-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Web Development</h1>
+                        <p class="lead">We build robust, scalable, and high-performance web applications.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="service-content-area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Web Development</h1>
-                        <p class="text-center">We build robust and scalable web applications that meet your business needs.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <img src="../assets/img/web-development.png" alt="Web Development" class="img-fluid rounded">
-                    </div>
-                    <div class="col-md-6">
-                        <h2>Our Web Development Process</h2>
-                        <p>We follow a proven process to ensure the success of your web development project. Our process includes the following steps:</p>
-                        <ul>
-                            <li>Discovery and Planning</li>
-                            <li>Design and Prototyping</li>
-                            <li>Development and Testing</li>
-                            <li>Deployment and Maintenance</li>
-                        </ul>
-
-                        <h2>Technologies We Use</h2>
-                        <p>We leverage a wide range of modern technologies to build high-performance web applications, including:</p>
-                        <div class="row tech-icons">
-                            <div class="col-3 text-center">
-                                <i class="fab fa-html5 fa-3x"></i>
-                                <p>HTML5</p>
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-cogs"></i>
                             </div>
-                            <div class="col-3 text-center">
-                                <i class="fab fa-css3-alt fa-3x"></i>
-                                <p>CSS3</p>
-                            </div>
-                            <div class="col-3 text-center">
-                                <i class="fab fa-js-square fa-3x"></i>
-                                <p>JavaScript</p>
-                            </div>
-                            <div class="col-3 text-center">
-                                <i class="fab fa-react fa-3x"></i>
-                                <p>React</p>
-                            </div>
-                            <div class="col-3 text-center">
-                                <i class="fab fa-node-js fa-3x"></i>
-                                <p>Node.js</p>
-                            </div>
-                            <div class="col-3 text-center">
-                                <i class="fab fa-php fa-3x"></i>
-                                <p>PHP</p>
-                            </div>
-                            <div class="col-3 text-center">
-                                <i class="fab fa-python fa-3x"></i>
-                                <p>Python</p>
-                            </div>
-                            <div class="col-3 text-center">
-                                <i class="fas fa-database fa-3x"></i>
-                                <p>Databases</p>
+                            <div class="service-card__content">
+                                <h3>Our Approach to Web Development</h3>
+                                <p>Our development process is agile, collaborative, and focused on delivering high-quality software. We work in sprints, allowing for flexibility and continuous feedback. We are committed to writing clean, maintainable, and well-documented code.</p>
                             </div>
                         </div>
 
-                        <h2>Why Choose Us for Web Development?</h2>
-                        <p>Choosing Corp Inc. for your web development needs means partnering with a team dedicated to your success. We offer:</p>
-                        <ul>
-                            <li>Custom Solutions tailored to your business goals.</li>
-                            <li>Expert Developers with years of experience.</li>
-                            <li>Transparent Communication throughout the project.</li>
-                            <li>Timely Delivery and post-launch support.</li>
-                        </ul>
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-tasks"></i>
+                            </div>
+                            <div class="service-card__content">
+                                <h3>Our Development Process</h3>
+                                <p>We follow a proven process to ensure the success of your web development project. Our process includes the following steps: Planning, Development, Testing, and Deployment.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-laptop-code"></i>
+                            </div>
+                            <div class="service-card__content">
+                                <h3>Technologies We Use</h3>
+                                <p>We leverage a wide range of modern technologies to build high-performance web applications, including React, Node.js, Python, and more. We choose the right tools for the job to ensure the best possible outcome for your project.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Service Details Section End -->
     </main>
 
     <!-- Footer Start -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-bar">
-                <p><i class="fas fa-envelope"></i> info@example.com</p>
-                <p><i class="fas fa-globe"></i> www.example.com</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Corp Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+                </div>
             </div>
         </div>
     </footer>

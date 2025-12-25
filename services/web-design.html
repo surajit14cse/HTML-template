@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
     <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
@@ -30,7 +31,10 @@
                             <a class="nav-link" href="../index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="../index.html#services">Services</a>
+                            <a class="nav-link active" aria-current="page" href="../index.html#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../case-studies.html">Case Studies</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="../about.html">About Us</a>
@@ -52,84 +56,76 @@
     <!-- Header End -->
 
     <main>
-        <!-- Service Details Section Start -->
-        <section class="service-details">
+        <div class="service-hero">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h1>Web Design</h1>
+                        <p class="lead">We create stunning, user-centric websites that drive results.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="service-content-area">
             <div class="container">
                 <div class="row">
                     <div class="col-md-12">
-                        <h1 class="text-center">Web Design</h1>
-                        <p class="text-center">We create stunning and user-friendly websites that are tailored to your brand.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-md-6">
-                        <div class="design-process">
-                            <div class="process-step process-step--highlighted">
-                                <i class="fas fa-lightbulb fa-3x"></i>
-                                <h4>Concept & Strategy</h4>
-                                <p>We start by understanding your vision and crafting a solid strategy.</p>
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-lightbulb"></i>
                             </div>
-                            <div class="process-step process-step--highlighted">
-                                <i class="fas fa-drafting-compass fa-3x"></i>
-                                <h4>Design & Prototyping</h4>
-                                <p>Bringing ideas to life with wireframes, mockups, and interactive prototypes.</p>
+                            <div class="service-card__content">
+                                <h3>Our Approach to Web Design</h3>
+                                <p>We believe that a successful website is more than just a beautiful design. It's a digital experience that engages users, communicates your brand's message, and drives business goals. Our web design process is collaborative, transparent, and focused on delivering a final product that exceeds your expectations.</p>
                             </div>
-                            <div class="process-step process-step--highlighted">
-                                <i class="fas fa-paint-brush fa-3x"></i>
-                                <h4>Visuals & Branding</h4>
-                                <p>Creating stunning visuals and ensuring consistent brand identity.</p>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-sitemap"></i>
                             </div>
-                            <div class="process-step process-step--highlighted">
-                                <i class="fas fa-check-circle fa-3x"></i>
-                                <h4>Review & Refine</h4>
-                                <p>Collaborative reviews and continuous refinement until perfection.</p>
+                            <div class="service-card__content">
+                                <h3>Our Design Process</h3>
+                                <p>Our design process is iterative and collaborative. We work closely with you to ensure that the final product is a perfect reflection of your brand and your vision. Our process includes the following steps: Discovery, Planning, Design, and Launch.</p>
+                            </div>
+                        </div>
+
+                        <div class="service-card">
+                            <div class="service-card__icon">
+                                <i class="fas fa-drafting-compass"></i>
+                            </div>
+                            <div class="service-card__content">
+                                <h3>Why Our Designs Work</h3>
+                                <p>Our designs are not only beautiful, but they are also effective. We focus on creating a seamless user experience that is optimized for speed, SEO-friendly, and secure. We design for mobile first, ensuring a great experience on all devices.</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <h2>Our Web Design Principles</h2>
-                        <p>Our design process focuses on creating visually appealing and highly functional websites. We adhere to the following principles:</p>
-                        <ul>
-                            <li>User-Centered Design</li>
-                            <li>Responsive and Mobile-First Approach</li>
-                            <li>Clean and Modern Aesthetics</li>
-                            <li>Brand Consistency</li>
-                        </ul>
-                    </div>
                 </div>
             </div>
         </section>
-        <!-- Service Details Section End -->
-
-        <!-- Client Collaboration Section Start -->
-        <section class="client-collaboration py-5">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6 order-md-2">
-                        <img src="../assets/img/collaboration.png" alt="Client Collaboration" class="img-fluid rounded shadow-sm">
-                    </div>
-                    <div class="col-md-6 order-md-1">
-                        <h2 class="section-title">Client Collaboration</h2>
-                        <p>We believe that successful web design is a collaborative effort. We work closely with our clients throughout the entire design process to ensure their vision is brought to life. Our collaboration process includes:</p>
-                        <ul>
-                            <li>Regular communication and feedback sessions.</li>
-                            <li>Access to design mockups and prototypes.</li>
-                            <li>Iterative design approach for continuous improvement.</li>
-                            <li>Dedicated project manager for seamless coordination.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Client Collaboration Section End -->
     </main>
 
     <!-- Footer Start -->
     <footer class="footer">
         <div class="container">
-            <div class="footer-bar">
-                <p><i class="fas fa-envelope"></i> info@example.com</p>
-                <p><i class="fas fa-globe"></i> www.example.com</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Corp Inc. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center mt-3">
+                    <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+                </div>
             </div>
         </div>
     </footer>
