@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation</title>
+    <style>
+        body { font-family: sans-serif; line-height: 1.6; padding: 20px; }
+        h1 { color: #333; }
+        code { background-color: #f4f4f4; padding: 2px 4px; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <!-- Main Title Start -->
+    <h1>Corporate Landing Page Documentation</h1>
+    <!-- Main Title End -->
+    
+    <!-- Introduction Start -->
+    <h2>Introduction</h2>
+    <p>Thank you for purchasing our theme. This documentation will guide you through the setup and customization of the theme.</p>
+    <!-- Introduction End -->
+
+    <!-- File Structure Start -->
+    <h2>File Structure</h2>
+    <p>The file structure is organized as follows:</p>
+    <pre>
+Project_Root/
+├── HTML/
+│   ├── assets/
+│   │   ├── css/
+│   │   │   ├── bootstrap.min.css
+│   │   │   ├── style.css (Your custom code)
+│   │   │   └── responsive.css
+│   │   ├── js/
+│   │   │   ├── bootstrap.bundle.min.js
+│   │   │   └── main.js
+│   │   ├── img/ (All images go here)
+│   │   └── fonts/ (Icon fonts like FontAwesome)
+│   ├── services/
+│   │   ├── web-design.html (Details page for Web Design)
+│   │   ├── web-development.html (Details page for Web Development)
+│   │   └── seo-optimization.html (Details page for SEO Optimization)
+│   ├── index.html
+│   └── about.html
+├── Documentation/
+│   └── index.html (How to use the theme)
+└── Licensing/ (License info for assets)
+    </pre>
+    <!-- File Structure End -->
+
+    <!-- Adding New Service Pages Start -->
+    <h2>Adding New Service Pages</h2>
+    <p>To add a new service page, you can duplicate one of the existing service pages (e.g., <code>web-design.html</code>) in the <code>HTML/services/</code> directory. Update the content, images, and links as needed. Remember to also add a "Learn More" button in the <code>services</code> section of <code>index.html</code> to link to your new service page.</p>
+    <!-- Adding New Service Pages End -->
+
+    <!-- Case Studies Integration Start -->
+    <h2>Case Studies Integration</h2>
+    <p>Case study content is organized in the <code>Project_Root/Documentation/case-studies.txt</code> file. You can create individual case study pages in a dedicated folder (e.g., <code>HTML/case-studies/</code>) similar to how service pages are handled.</p>
+    <p>To integrate a new case study:</p>
+    <ol>
+        <li>Create a new HTML file (e.g., <code>case-study-1.html</code>) within <code>HTML/case-studies/</code>.</li>
+        <li>Populate the HTML file with content from <code>case-studies.txt</code> or your custom content. Ensure to maintain consistency with the theme's design.</li>
+        <li>Link to this new case study page from your main <code>index.html</code> (e.g., from a dedicated "Case Studies" section) or any other relevant page.</li>
+        <li>Remember to adjust relative paths for CSS and JS files in your new case study HTML file (e.g., <code>../../assets/css/style.css</code> if placed inside <code>HTML/case-studies/</code>).</li>
+    </ol>
+    <!-- Case Studies Integration End -->
+
+    <!-- Customization Start -->
+    <h2>Customization</h2>
+    <p>To customize the theme, you can edit the <code>style.css</code> file located in <code>HTML/assets/css/</code>. All the custom styles for the theme are in this file.</p>
+    <p>You can also change the images in the <code>HTML/assets/img/</code> directory to your own images.</p>
+    <!-- Customization End -->
+
+    <!-- Fonts Start -->
+    <h2>Fonts</h2>
+    <p>The theme uses Google Fonts. The fonts used are 'Montserrat' for headings and 'Open Sans' for body text. You can change the fonts by editing the link in the <code>&lt;head&gt;</code> section of the HTML files.</p>
+    <!-- Fonts End -->
